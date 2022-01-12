@@ -7,6 +7,7 @@ if(isset($_GET['video'])) {
 
     //Let's get the images into $html and image array to $arr... 
     $arr = $json->graphql->shortcode_media->video_url;
+    echo $arr;
     header("Location: ".$arr."");
 }
 ?>
